@@ -32,4 +32,13 @@ function setCurrentTime(time) {
   newOrleansTime.innerHTML = newOrleansTimeZone.format("HH:mm");
 }
 
+function selectCity() {
+  let cityOne = document.querySelector("#city-one");
+  cityOne.innerHTML = "Cape Town";
+}
+
 setCurrentTime();
+setInterval(setCurrentTime, 1000);
+
+let dropBox = document.querySelector("#drop-box");
+dropBox.addEventListener("change", selectCity());
