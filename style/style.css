@@ -1,0 +1,84 @@
+.gayathri-thin {
+  font-family: "Gayathri", sans-serif;
+  font-weight: 100;
+  font-style: normal;
+}
+
+.gayathri-regular {
+  font-family: "Gayathri", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.gayathri-bold {
+  font-family: "Gayathri", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+body {
+  background-image: url("flower.jpg");
+  background-size: 100%;
+  font-family: "Gayathri", sans-serif;
+  font-weight: bold;
+}
+h1 {
+  color: #cd2b00;
+  text-align: center;
+  opacity: none;
+}
+.container {
+  background-color: rgba(255, 255, 255, 0.5);
+  max-width: 450px;
+  margin: 0 auto;
+  box-shadow: #fff;
+  border-radius: 20px;
+  padding: 1px 20px;
+}
+.drop-box {
+  background-color: rgba(255, 255, 255, 0.4);
+  display: block;
+  width: 50%;
+  margin: 0 0 20px 125px;
+  font-size: 20px;
+  text-align: center;
+  border-radius: 15px;
+}
+.pick-two {
+  color: #cd2b00;
+}
+
+.pick-three {
+  color: #f69452;
+}
+.pick-four {
+  color: #cb5e9e;
+}
+.pick-five {
+  color: #9f005e;
+}
+.city {
+  display: flex;
+  font-weight: bold;
+  justify-content: space-between;
+}
+.time {
+  font-size: 55px;
+  font-weight: bold;
+}
+.city-one {
+  color: #f69452;
+}
+.city-two {
+  color: #fff;
+}
+.city-three {
+  color: #cb5e9e;
+}
+.city-four {
+  color: #9f005e;
+}
+.footer {
+  text-align: center;
+  margin: 8px 0 0 0;
+}

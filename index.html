@@ -5,45 +5,62 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style/style.css" />
     <title>World Clock</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Gayathri:wght@100;400;700&display=swap"
+      rel="stylesheet" />
   </head>
   <body>
-    <div class="body">
+    <div class="container">
       <h1>World Clock</h1>
 
-      <select name="" id="">
-        <option value="">Pick a city 🏳️‍🌈</option>
-        <option value="">Cape Town, South Africa</option>
-        <option value="">Alice Springs, Australia</option>
-        <option value="">Auckland, New Zeland</option>
-        <option value="">Buenos Aires, Argentina</option>
+      <select name="" class="drop-box" id="">
+        <option value="" class="pick-one">Pick a city</option>
+        <option value="" class="pick-two">Cape Town, South Africa</option>
+        <option value="" class="pick-three">Alice Springs, Australia</option>
+        <option value="" class="pick-four">Auckland, New Zeland</option>
+        <option value="" class="pick-five">Buenos Aires, Argentina</option>
       </select>
 
-      <div class="city">
-        <h2>Hebden Bridge, UK</h2>
-        <div class="date">Tuesday 22nd October</div>
-        <div class="time">15.47</div>
-      </div>
-      <div class="city">
-        <h2>Oahu, Hawaii</h2>
-        <div class="date">Tuesday 22nd October</div>
-        <div class="time">15.47</div>
-      </div>
-      <div class="city">
-        <h2>Bangkok, Thailand</h2>
-        <div class="date">Tuesday 22nd October</div>
-        <div class="time">15.47</div>
-      </div>
-      <div class="city">
-        <h2>New Orleans, Louisiana</h2>
-        <div class="date">Tuesday 22nd October</div>
+      <div class="city city-one">
+        <div>
+          <h2>Hebden Bridge, UK</h2>
+          <div class="date">Tuesday 22nd October</div>
+        </div>
         <div class="time">15.47</div>
       </div>
 
-      <footer>
-        Coded by Emily Jayne & open sourced on
-        <a href="https://github.com/EmilyJaynee" target="_blank">GitHub</a>
-      </footer>
+      <div class="city city-two">
+        <div>
+          <h2>Oahu, Hawaii</h2>
+          <div class="date">Tuesday 22nd October</div>
+        </div>
+        <div class="time">15.47</div>
+      </div>
+
+      <div class="city city-three">
+        <div>
+          <h2>Bangkok, Thailand</h2>
+          <div class="date">Tuesday 22nd October</div>
+        </div>
+        <div class="time">15.47</div>
+      </div>
+
+      <div class="city city-four">
+        <div>
+          <h2>New Orleans, Louisiana</h2>
+          <div class="date">Tuesday 22nd October</div>
+        </div>
+
+        <div class="time">15.47</div>
+      </div>
     </div>
+
+    <footer class="footer">
+      Coded by Emily Jayne & open sourced on
+      <a href="https://github.com/EmilyJaynee" target="_blank">GitHub</a>
+    </footer>
 
     <script src="JS/index.js"></script>
   </body>
