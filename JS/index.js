@@ -32,13 +32,24 @@ function setCurrentTime(time) {
   newOrleansTime.innerHTML = newOrleansTimeZone.format("HH:mm");
 }
 
-function selectCity() {
-  let cityOne = document.querySelector("#city-one");
-  cityOne.innerHTML = "Cape Town";
+function selectCity(event) {
+  let cityTimeZone = event.target.value;
+  let cityTime = moment().tz(cityTimeZone);
+  console.log(cityTime.format("HH:mm"));
+  if (cityTimeZone == "Africa/Maseru") {
+    let firstCityElement = document.querySelector("#change-one");
+    firstCityElement.innerHTML = `<div class="city city-one" >
+        <div>
+          <h2 id="city-one">Cape Town</h2>
+          <div class="date">${cityTime.format("dddd Do MMMM")}</div>
+        </div>
+        <div class="time">${cityTime.format("HH:mm")}</div>
+      </div>`;
+  }
 }
 
 setCurrentTime();
 setInterval(setCurrentTime, 1000);
 
 let dropBox = document.querySelector("#drop-box");
-dropBox.addEventListener("change", selectCity());
+dropBox.addEventListener("change", selectCity);
