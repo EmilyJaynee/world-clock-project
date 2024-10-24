@@ -1,4 +1,4 @@
-function setCurrentTime(time) {
+function setCurrentTime() {
   let hebdenBridge = document.querySelector("#hebden-bridge");
   let hebdenBridgeDate = hebdenBridge.querySelector(".date");
   let hebdenBridgeTime = hebdenBridge.querySelector(".time");
@@ -45,6 +45,30 @@ function selectCity(event) {
         </div>
         <div class="time">${cityTime.format("HH:mm")}</div>
       </div>`;
+  }
+  if (cityTimeZone == "Australia/Darwin") {
+    let secondCityElement = document.querySelector("#change-two");
+    secondCityElement.innerHTML = ` <div class="city city-two" >
+          <div>
+            <h2>Alice Springs</h2>
+            <div class="date">${cityTime.format("dddd Do MMMM")}</div>
+          </div>
+          <div class="time">${cityTime.format("HH:mm")}</div>
+        </div>
+    `;
+  }
+  if (cityTimeZone == "NZ") {
+    let thridCityElement = document.querySelector("#change-three");
+    thridCityElement.innerHTML = `
+      <div class="city city-three" id="bangkok">
+        <div>
+          <h2>Auckland, New Zeland</h2>
+          <div class="date">${cityTime.format("dddd Do MMMM")}</div>
+        </div>
+        <div class="time">${cityTime.format("HH:mm")}</div>
+      </div> `;
+  } else {
+    setCurrentTime;
   }
 }
 
