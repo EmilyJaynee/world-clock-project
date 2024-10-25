@@ -40,7 +40,7 @@ function selectCity(event) {
     let firstCityElement = document.querySelector("#change-one");
     firstCityElement.innerHTML = `<div class="city city-one" >
         <div>
-          <h2 id="city-one">Cape Town</h2>
+          <h2 id="city-one">Cape Town, South Africa</h2>
           <div class="date">${cityTime.format("dddd Do MMMM")}</div>
         </div>
         <div class="time">${cityTime.format("HH:mm")}</div>
@@ -50,7 +50,7 @@ function selectCity(event) {
     let secondCityElement = document.querySelector("#change-two");
     secondCityElement.innerHTML = ` <div class="city city-two" >
           <div>
-            <h2>Alice Springs</h2>
+            <h2>Alice Springs, Australia</h2>
             <div class="date">${cityTime.format("dddd Do MMMM")}</div>
           </div>
           <div class="time">${cityTime.format("HH:mm")}</div>
@@ -67,8 +67,21 @@ function selectCity(event) {
         </div>
         <div class="time">${cityTime.format("HH:mm")}</div>
       </div> `;
-  } else {
-    setCurrentTime;
+  }
+  if (cityTimeZone == "America/Argentina/Buenos_Aires") {
+    let fourthCityELement = document.querySelector("#change-four");
+    fourthCityELement.innerHTML = `
+      <div id="change-four">
+        <div class="city city-four" id="new-orleans">
+          <div>
+            <h2>Buenos Aires, Argentina</h2>
+            <div class="date">${cityTime.format("dddd Do MMMM")}</div>
+          </div>
+
+          <div class="time">${cityTime.format("HH:mm")}</div>
+        </div>
+      </div>
+        `;
   }
 }
 
