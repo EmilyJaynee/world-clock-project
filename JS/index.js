@@ -72,7 +72,7 @@ function selectCity(event) {
     let fourthCityELement = document.querySelector("#change-four");
     fourthCityELement.innerHTML = `
       <div id="change-four">
-        <div class="city city-four" id="new-orleans">
+        <div class="city city-four">
           <div>
             <h2>Buenos Aires, Argentina</h2>
             <div class="date">${cityTime.format("dddd Do MMMM")}</div>
@@ -84,7 +84,6 @@ function selectCity(event) {
         `;
   }
 }
-
 setCurrentTime();
 setInterval(setCurrentTime, 1000);
 
