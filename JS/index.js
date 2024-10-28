@@ -35,12 +35,13 @@ function setCurrentTime() {
 function selectCity(event) {
   let cityTimeZone = event.target.value;
   let cityTime = moment().tz(cityTimeZone);
-  console.log(cityTime.format("HH:mm"));
-  if (cityTimeZone == "Africa/Maseru") {
+
+  if (cityTimeZone == "current") {
     let firstCityElement = document.querySelector("#change-one");
+    let currentLocation = moment.tz.guess();
     firstCityElement.innerHTML = `<div class="city city-one" >
         <div>
-          <h2 id="city-one">Cape Town, South Africa</h2>
+          <h2 id="city-one">${currentLocation}</h2>
           <div class="date">${cityTime.format("dddd Do MMMM")}</div>
         </div>
         <div class="time">${cityTime.format("HH:mm")}</div>
