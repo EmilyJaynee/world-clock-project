@@ -39,12 +39,14 @@ function selectCity(event) {
   if (cityTimeZone == "current") {
     let firstCityElement = document.querySelector("#change-one");
     let currentLocation = moment.tz.guess();
+    let currentTime = moment.tz(currentLocation);
+    let currentName = currentLocation.replace("_", " ").split("/")[1];
     firstCityElement.innerHTML = `<div class="city city-one" >
         <div>
-          <h2 id="city-one">${currentLocation}</h2>
-          <div class="date">${cityTime.format("dddd Do MMMM")}</div>
+          <h2 id="city-one">${currentName}</h2>
+          <div class="date">${currentTime.format("dddd Do MMMM")}</div>
         </div>
-        <div class="time">${cityTime.format("HH:mm")}</div>
+        <div class="time">${currentTime.format("HH:mm")}</div>
       </div>`;
   }
   if (cityTimeZone == "Australia/Darwin") {
